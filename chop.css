@@ -1,0 +1,50 @@
+body {
+	background-color: white;
+}
+
+div {
+	margin: 8px;
+}
+
+table {
+	width: 600px;
+	border: 1px black solid bottom top;
+}
+
+h1 {
+	font-size: 35pt;
+	font-family: arial;
+}
+
+#chop {
+	padding: 20px;
+}
+
+#copyme {
+	font-size: 12pt;
+	width: 600px;
+}
+
+#xm {
+	font-size: 50pt;
+	width: 300px;
+}
+
+#preview {
+	text-align: center;
+}
+
+#copymsg {
+	position: absolute;
+	left: 350px;
+	top: 100px;
+	padding: 50px;
+	width: 200px;
+	font-weight: 900;
+	font-family: arial;
+	font-size: 33pt;
+	background-color: yellow;
+	color: black;
+	/*visibility: hidden;*/
+	display: none;
+}
