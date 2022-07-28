@@ -10,13 +10,13 @@ $( document ).ready(function(){
 	$( '#xm' ).on( 'change, keyup, input' , function(){
 
 		// removes alphanum
-		if( $( this ).val().match(/\w/gui)) {
-			$(this).val( $(this).val().replace(/\w/gui, ''));
+		if( $( this ).val().match( /\w/gui )) {
+			$( this ).val( $( this ).val().replace( /\w/gui , ''));
 		}
 
 		// removes punctuation
-		if($( this ).val().match(/\p{P}/gu)) {
-			$(this).val( $(this).val().replace(/\p{P}/gu, ''));
+		if($( this ).val().match( /\p{P}/gu )) {
+			$( this ).val( $( this ).val().replace( /\p{P}/gu , ''));
 		}
 
 		upd();
