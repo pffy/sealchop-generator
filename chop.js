@@ -64,3 +64,4 @@ function upd() {
 
 	$( '#chop' ).attr( 'src' , url);
 }
+
