@@ -15,10 +15,15 @@
 <body>
 
 <center>
-  <h1>Chinese Seal Chop Generator</h2>
-    <table>
-<tr>
-<td>
+<div id="wrap">
+
+<h1>Chinese Seal Chop Generator</h1>
+<img id="chop" src="https://png.sealchop.com/">
+<br/>
+<button id="copybtn">Copy URL to clipboard</button>
+
+<br>
+
 <div>
 <input value="#FFFFFF" class="qq" type="color" name="p" />
 <label for="p">paper</label>
@@ -40,33 +45,20 @@
 </div>
 
 <br/>
-<div>
 
-<input id="xm" value="姓名字" type="text" name="x" />
-<br/>
 <label for="x">xingming <abbr title="Personal name, but you can use other Chinese or Korean characters, too. ^^">[?]</abbr></label>
-</div>
-
-</td><td id="preview">
-<img id="chop" width="200" src="http://localhost:8888">
-
 <br/>
-<a id="copylink" href="javascript:;">Copy URL</a>
-</td></tr>
-</table>
-
-<input id="copyme" type="text" readonly>
-
-<div id="copymsg">copied!</div>
+<input id="xm" value="姓名字" type="text" name="x" />
 
 <br/>
 <br/>The Pffy Authors &copy; 2022
 <br/>sealchop generator v0.3.1
 <br/><a href="https://about.sealchop.com/">sealchop</a> v8.0
+
+</div>
 </center>
 
 <script language="javascript" src="chop.js"></script>
 
 </body>
 </html>
-

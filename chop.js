@@ -26,7 +26,7 @@ $( document ).ready(function(){
 		upd();
 	});
 
-	$( '#copylink, #copyme' ).click(function(){
+	$( '#copybtn' ).click(function(){
 		copythat();
 	});
 
@@ -38,21 +38,15 @@ $( document ).ready(function(){
 
 function copythat() {
 
-	navigator.clipboard.writeText( $( '#copyme' ).val())
+	navigator.clipboard.writeText( $( '#chop' ).attr( 'src' ))
 		.then(() => {
 
-		showmsg();
-		setTimeout(hidemsg, 1000);
+		$( '#copybtn' ).text('Copied!');
+		setTimeout(function(){
+			$( '#copybtn' ).text('Copy URL to clipboard');
+		}, 1000);
 		console.log('copied!');
 	});
-}
-
-function hidemsg() {
-	$( '#copymsg' ).hide( 'slow' );
-}
-
-function showmsg() {
-	$( '#copymsg' ).show();
 }
 
 function upd() {
@@ -69,5 +63,4 @@ function upd() {
 	const url = b + arr.join( '&' );
 
 	$( '#chop' ).attr( 'src' , url);
-	$( '#copyme' ).val(url);
 }

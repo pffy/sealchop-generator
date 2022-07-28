@@ -1,50 +1,40 @@
+/*
+name  	: chop.css
+git 	: https://github.com/pffy/sealchop-generator
+*/
+
 body {
 	background-color: white;
+	color: black;
 }
 
 div {
 	margin: 8px;
 }
 
-table {
-	width: 600px;
-	border: 1px black solid bottom top;
-}
-
 h1 {
-	font-size: 35pt;
+	font-size: 28pt;
 	font-family: arial;
 }
 
 #chop {
-	padding: 20px;
+	width: 200px;
 }
 
-#copyme {
+#copybtn {
+	font-weight: bold;
+	width: 200px;
 	font-size: 12pt;
-	width: 600px;
+	margin:0px;
+	margin-top: 10px;
+}
+
+#wrap {
+	text-align: left;
+	width: 220px;
 }
 
 #xm {
-	font-size: 50pt;
-	width: 300px;
-}
-
-#preview {
-	text-align: center;
-}
-
-#copymsg {
-	position: absolute;
-	left: 350px;
-	top: 100px;
-	padding: 50px;
+	font-size: 35pt;
 	width: 200px;
-	font-weight: 900;
-	font-family: arial;
-	font-size: 33pt;
-	background-color: yellow;
-	color: black;
-	/*visibility: hidden;*/
-	display: none;
 }
