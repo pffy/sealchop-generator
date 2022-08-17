@@ -63,5 +63,6 @@ function upd() {
 	const url = b + arr.join( '&' );
 
 	$( '#chop' ).attr( 'src' , url);
+  	gapi.savetodrive.go('container');	
 }
 
